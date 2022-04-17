@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    background: #fbfbfb;
+    font-family: 'Roboto', sans-serif;
+
+    -webkit-font-smoothing:antialiased !important /*melhora a fonte, reduzindo*/
+
+}
+li{
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 50px;
+
+    background: #23A0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  1px 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.main{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.newPost{
+    width: 100%;
+    height: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 0;
+    padding: 25px;
+
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.infoUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgUser{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #333;
+}
+
+
+
+strong{
+    font-size: 16px;
+    margin-left: 10px;
+    color: #23A0ff;
+}
+
+form.formPost{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+textarea{
+    height: 90px;
+    background: #fbfbfb;
+    margin: 15px 0;
+    padding: 25px;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    border: 0;
+
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #727272;
+
+}
+
+.icons{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconsAndButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button.btnFileForm{
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border: 0;
+    background:none;
+
+    cursor: pointer;
+}
+
+button.btnsubmitForm{
+    background: #23a0ff;
+    padding: 10px 50px;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+button.btnsubmitForm:hover {
+    background: rgb(8, 138, 236);
+}
+
+li.post{
+    margin-bottom: 50px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.infoUserPost{
+    display: flex;
+    align-items: center;
+}
+
+.imgUserPost{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background:  #23A0ff;
+
+} 
+
+.nameAndHour{
+    margin-left: 10px;
+}
+
+.nameAndHour >strong{
+    color: #23A0ff;
+}
+
+.nameAndHour >p{
+    color: #d1d1d1;
+    font-size: 12px;
+}
+
+li.post>p{
+    width: 100%;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #727272;
+}
+
+.actionBtnPost{
+    display: flex;
+    align-items: center;
+}
+
+button.filePost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button.filePost img{
+    margin-right: 5px;
+}
+
+.like{
+    background: #ff6b6b;
+}
+
+.like:hover{
+    background: #fc4545;
+}
+
+.comment{
+    background: #fbcb45;
+}
+
+.comment:hover{
+    background: #f8ba0e;
+}
+
+.share{
+    background: #62b4f3;
+}
+
+.share:hover{
+    background: #0d93fa;
+}
