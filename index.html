@@ -10,20 +10,21 @@
 </head>
 <body>
     <header>
-        <img src="./img/logo.svg" alt="Lobo Bem Social">
+        <img src="./img/logo.svg" alt="Logo Bem Social">
     </header>
 
     <main class="main">
         <!--Formulário de envio-->
         <div class="newPost">
+
             <div class="infoUser">
                 <div class="imgUser"></div>
                 <strong>Wendell Batist</strong>
             </div>
             
 
-            <form action="" class="formPost">
-                <textarea name="textarea" placeholder="Nós Acreditamos em você!"></textarea>
+            <form action="" class="formPost" id="formPost">
+                <textarea name="textarea" placeholder="Nós Acreditamos em você!" id="texterea"></textarea>
 
                 <div class="iconsAndButton">
                     <div class="icons">
@@ -31,11 +32,11 @@
                         <button class="btnFileForm"><img src="./img/gif.svg" alt="Adicionar uma gif"></button>
                         <button class="btnFileForm"><img src="./img/video.svg" alt="Adicionar um video"></button>
                     </div>
-                    <button type="submit" class="btnsubmitForm">Publicar</button>
+                    <button type="submit" id="botao" class="btnsubmitForm">Publicar</button>
                 </div>
             </form>
         </div>
-        <ul class="posts">
+        <ul class="posts" id="posts">
             <li class="post">
                 <div class="infoUserPost">
                     <div class="imgUserPost"></div>
@@ -85,6 +86,7 @@
             
         </ul>
     </main>
+    <script type="module" src="/controller/FormsPost.js"></script>
     
 </body>
 </html>
